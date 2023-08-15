@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = " utf-8">
+    <meta  name=" viewport" content=" width=device-width, initial-s">
+    <title>exemplo if 01</title>
+</head>
+
+<body>
+    <p id="num"></p> 
+    <script>
+        /*math. random gera um numero aleatório entre 0 e1, multiplica por 1000 para gerar numeros 
+        entre 1 e 999 e extrai somente a parte inteira ( match.floor)*/ 
+
+        var num = Math.floor (Math.random() * 1000);
+        if (num % 2 == 0)
+        {
+            window.document.getElementById("num").innerText = num + " é par. a quantidade de digitos :" + num.toString().length;
+        }
+        else
+        {
+            window.document.getElementById("num").innerText = num + " é impar. a quantidade de digitos :" + num.toString().length;
+        }
+    </script>
+   
+        
+</body>
+
+</html>
