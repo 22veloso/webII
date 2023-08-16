@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = " utf-8">
+    <meta  name=" viewport" content=" width=device-width, initial-s">
+    <title>Case</title>
+</head>
+<body>
+    <input type="text" name="txtsigno" id="txtsigno">
+    <button type="button" onclick="verificarSigno()">Verificar</button>
+    <p id="mensagem"></p>
+</body>
+<script>
+    function verificarSigno(){
+       let signo = document.getElementById("txtsigno").value;
+       let msg = null;
+       switch (signo){
+        case 'Áries':
+            msg = "- de 21 de março a 20 de abril";
+            break;
+        case 'touro':
+            msg = "- de 21 de abril a 20 de maio";
+            break;
+        case 'Gemeos':
+            msg = "de 21 de maio a 20 de junho";
+            break;
+        case ' cancer':
+            msg = "de 21 de junho a 22 de julho";
+        case 'Leão':
+            msg = " de 23 de junho a 22 de agosto";
+            break;
+        case 'Virgem':
+            msg = "de 23 de agosto a 22 de setembro";
+            break;
+            default:
+                msg = "signo não registrado !";
+                break;
+       }
+       document.getElementById("mensagem").innerText = "signo: " + signo + " " + msg;
+
+       }
+
+</script>
